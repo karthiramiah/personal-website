@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karthi Ramiah</title>
+    <meta
+      name="description"
+      content="Personal site for Karthi Ramiah featuring passions, links, and a Drake song of the day."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <nav class="topbar">
+          <div class="brand-pill">KR</div>
+          <div class="topbar-links">
+            <a href="#vibes">Vibes</a>
+            <a href="#anthem">Anthem</a>
+            <a href="#connect">Connect</a>
+          </div>
+        </nav>
+
+        <div class="hero-grid">
+          <section class="hero-copy">
+            <p class="eyebrow">Personal Home Court</p>
+            <h1>Karthi Ramiah</h1>
+            <p class="hero-text">
+              Philly grit, Duke obsession, and a daily Drake soundtrack. This
+              site is part sports tunnel, part music dashboard, part digital
+              business card.
+            </p>
+            <div class="cta-row">
+              <a class="button button-primary" href="#connect">Find Me</a>
+              <a class="button button-secondary" href="#anthem">Song Of The Day</a>
+            </div>
+          </section>
+
+          <section class="scoreboard-card">
+            <div class="scoreboard-head">
+              <span>Live Profile Feed</span>
+              <span class="pulse-dot"></span>
+            </div>
+            <div class="scoreboard-body">
+              <div class="score-stat">
+                <span class="score-label">Energy</span>
+                <span class="score-value">Playoff</span>
+              </div>
+              <div class="score-stat">
+                <span class="score-label">Loyalty</span>
+                <span class="score-value">Philly</span>
+              </div>
+              <div class="score-stat">
+                <span class="score-label">College Side</span>
+                <span class="score-value">Duke</span>
+              </div>
+              <div class="score-stat">
+                <span class="score-label">Current Mood</span>
+                <span class="score-value" id="daily-mood">Calibrating...</span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </header>
+
+      <main>
+        <section class="panel spotlight-panel" id="vibes">
+          <div class="section-heading">
+            <p class="eyebrow">Passions</p>
+            <h2>What I Care About</h2>
+          </div>
+
+          <div class="spotlight-grid">
+            <article class="spotlight-card philly-card">
+              <div class="card-chip">City DNA</div>
+              <h3>Philly Sports</h3>
+              <p>
+                The full emotional portfolio: Eagles Sundays, Sixers hope,
+                Phillies summer, Flyers chaos. High stakes only.
+              </p>
+            </article>
+
+            <article class="spotlight-card duke-card">
+              <div class="card-chip">College Mode</div>
+              <h3>Duke Sports</h3>
+              <p>
+                Precision, tradition, and just the right amount of villain
+                energy. If there is a Duke game on, I am tuned in.
+              </p>
+            </article>
+
+            <article class="spotlight-card mix-card">
+              <div class="card-chip">Daily Rotation</div>
+              <h3>Music That Scores The Day</h3>
+              <p>
+                Some people start with coffee. Some start with a hype playlist.
+                I prefer both, and Drake usually makes the starting lineup.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel anthem-panel" id="anthem">
+          <div class="section-heading">
+            <p class="eyebrow">Daily Pick</p>
+            <h2>Drake Song Of The Day</h2>
+          </div>
+
+          <div class="anthem-layout">
+            <div class="anthem-display">
+              <div class="vinyl-ring">
+                <div class="vinyl-core"></div>
+              </div>
+              <div class="anthem-copy">
+                <p class="anthem-label">Today’s selection</p>
+                <h3 id="song-title">Loading track...</h3>
+                <p id="song-note">
+                  Building the rotation from the archive.
+                </p>
+              </div>
+            </div>
+
+            <div class="anthem-list">
+              <p class="list-title">Bench Mob</p>
+              <ul id="song-queue"></ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel connect-panel" id="connect">
+          <div class="section-heading">
+            <p class="eyebrow">Links</p>
+            <h2>Connect With Me</h2>
+          </div>
+
+          <div class="connect-grid">
+            <a
+              class="connect-card"
+              href="https://www.linkedin.com/in/your-linkedin-here"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span class="connect-kicker">Professional</span>
+              <strong>LinkedIn</strong>
+              <span>Drop in the real profile URL here.</span>
+            </a>
+
+            <a class="connect-card" href="mailto:hello@example.com">
+              <span class="connect-kicker">Direct</span>
+              <strong>Email</strong>
+              <span>Swap in your actual email when you are ready.</span>
+            </a>
+
+            <div class="connect-card status-card">
+              <span class="connect-kicker">Current Status</span>
+              <strong>Open To Cool Things</strong>
+              <span>
+                Sports talk, data projects, sharp design, and anything with
+                real personality.
+              </span>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
